@@ -1,2 +1,4 @@
-# vcd_controller
-i have made a vcd controller which manage the boom open and close everything and count through the loop
+File Name - entry2boom.py
+
+This file is used to read from a database table and control the boom barrier. If it finds Y in the table
+it triggers boom barrier open and then updates the DB table.

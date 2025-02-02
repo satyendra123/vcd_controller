@@ -1,0 +1,66 @@
+.approvedlogin {
+	margin-top: 13px;
+	width: 97.5%;
+	margin-left: 20px;
+	height: 90vh;
+	border-radius: 40px;
+	background-color: #eff8ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .login-form {
+	padding: 20px;
+  }
+  
+  .left-column img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  .left-column h4,
+  .left-column h6 {
+	text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+	.approvedlogin {
+	  margin: 0;
+	  width: 100%;
+	  border-radius: 0;
+	  height: auto;
+	}
+  
+	.left-column,
+	.right-column {
+	  margin: 0;
+	  padding: 0;
+	}
+  
+	.left-column {
+	  margin-bottom: 20px;
+	}
+  
+	.form-title {
+	  width: 100%;
+	}
+  
+	.login-form {
+	  margin: 0 auto;
+	  width: 90%;
+	}
+  
+	button {
+	  width: 100%;
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.login-form {
+	  width: 100%;
+	}
+  }

@@ -1,0 +1,245 @@
+/* General body styling */
+body {
+    background-color: #f5f5f5; /* Light gray background for the body */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* App Layout */
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Main layout */
+  .main {
+    display: flex;
+    flex: 1;
+    height: auto;
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(244, 244, 244, 0.9); /* Light gray background with transparency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px); /* Subtle blur effect */
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Menu items */
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu span {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu span:hover {
+    background-color: rgba(221, 221, 221, 0.7); /* Slightly blurred gray background */
+    border-radius: 5px;
+    color: white;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 250px;
+    height: auto;
+    background-color: rgba(229, 229, 229, 0.9); /* Transparent light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto;
+    backdrop-filter: blur(8px); /* Adding blur effect */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 15px;
+    background-color: rgba(229, 229, 229, 0.9); /* Slightly transparent light gray background */
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: rgba(0, 123, 255, 0.7); /* Soft blue hover with transparency */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .sidebar ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background: white;
+  }
+  
+  /* Table View */
+  .table-view {
+    height: 20%;
+  }
+  
+  .table-view table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-view th,
+  .table-view td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table-view th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Tab Panel Styling */
+  .tab-panel {
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+  }
+  
+  /* Footer Tab Panel */
+  .footer-tab-panel {
+    background-color: rgba(245, 245, 245, 0.9); /* Light gray with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    backdrop-filter: blur(6px); /* Subtle blur effect */
+  }
+  
+  .footer-tabs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .footer-tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .footer-tabs .active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .footer-tabs li:hover {
+    background-color: rgba(224, 224, 224, 0.7); /* Light gray hover with transparency */
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Log Container */
+  .log-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .log-data {
+    background-color: rgba(230, 247, 255, 0.8); /* Light blue with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .log-data:first-child {
+    background-color: rgba(209, 255, 209, 0.9); /* Light green with transparency */
+  }
+  
+  .log-data:last-child {
+    background-color: rgba(255, 209, 209, 0.9); /* Light red with transparency */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .log-container {
+      padding: 10px;
+    }
+  }
+  
+  /* Boom Barrier Styling */
+  .boom-barrier {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .boom-barrier:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Header h1 Hover Effect */
+  h1 {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1:hover {
+    background-color: #2a9d8f;
+  }
+  
+  /* Image Wrapper */
+  .image-wrapper {
+    width: fit-content;
+  }
+  
